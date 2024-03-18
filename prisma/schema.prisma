@@ -12,7 +12,7 @@ model User {
   firstName       String @map("first_name")
   lastName        String @map("last_name")
   email           String @unique
-  profileImageUrl String @map("profile_image_url")
+  profileImageUrl String? @map("profile_image_url")
   password        String
   salt            String
 
